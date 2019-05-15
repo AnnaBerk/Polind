@@ -1,0 +1,47 @@
+
+@import "color-variables.scss";
+
+.best-offers{
+		margin-top:-217px;
+}
+.best-offers__wrapper{
+	width:100%;
+	display: flex;
+  justify-content: space-between;
+  margin-bottom:60px;
+}
+
+.best-offers__item{
+	height:433px;
+	width:370px;
+	text-align: center;
+	margin-right:30px;
+}
+.offer-first{
+	background-image: url(../images/PoznanBest.jpg);
+	width:346px;
+}
+.offer-second{
+	background-image: url(../images/Zakopane.jpg);
+}
+.offer-third{
+	background-image: url(../images/Sandomierz.jpg);
+}
+.offer-fourth{
+	background-image: url(../images/Soport.jpg);
+}
+.offer-fifth{
+	background-image: url(../images/KarpaczBest.jpg);
+	margin-right:0;
+	width:346px;
+}
+.best-offers__header{
+	font-size:30px;
+	margin-top:320px;
+	color:rgb(275,275,275);
+	margin-bottom:10px;
+}
+.best-offers__place{
+	font-size:14px;
+	color:$button-color;
+}

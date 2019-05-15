@@ -1,0 +1,68 @@
+
+@import "color-variables.scss";
+
+.page{
+	color:#fff;
+	background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/BGMain.jpg) 0 0 no-repeat;
+	height:1210px;
+	background-size: cover;
+	text-align: center;
+}
+.page__wrapper{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.logo__name{
+	font-size:30px;
+	width:180px;
+	height:61px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	padding-left:75px;
+  padding-top:15px
+}
+.page__logo{
+	padding-top:38px;
+	margin-left:40px;
+}
+.nav__wrapper{
+	display: flex;
+	padding-top:60px;
+}
+.nav__list{
+	display: flex;
+}
+ .list__item{
+	 list-style: none;
+}
+
+.item-link{
+	text-decoration: none;
+	color:#fff;
+	padding:0 25px;
+	 &:hover,&:focus{
+    	color:$button-color;
+    }
+}
+.page__header{
+	font-size: 72px;
+	padding-top:230px;
+}
+.header-color{
+	color:$logo-color;
+	
+}
+.page__about{
+	font-size: 18px;
+	color:rgba(255,255,255,0.5);
+	font-family: "Montserrat-Regular",sans-serif;
+	padding-top:30px;
+}
+.search-button{
+	margin-top:50px;
+}
+.page__popular{
+	font-size: 18px;
+	margin-top:270px;
+}

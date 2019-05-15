@@ -1,0 +1,17 @@
+@import "color-variables.scss";
+.button{
+ background-color: $button-color;
+ border:none;
+ border-radius:20px;
+ text-transform: uppercase;
+ padding:10px 25px;
+ font-size:14px;
+ color:rgb(185,128,0);
+ font-family: "Montserrat-Bold",sans-serif;
+ font-weight: bold;
+ text-decoration: none;
+  &:hover,&:focus{
+    	color:$button-color;
+    	background-color: rgb(185,128,0);
+    }
+}

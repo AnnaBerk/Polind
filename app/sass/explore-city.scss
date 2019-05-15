@@ -1,0 +1,44 @@
+@import "color-variables.scss";
+.explore-city{
+	background-color:rgb(249,250,251);
+	background: url(../images/SAN.png) 100% 0 no-repeat,
+              url(../images/DOM.png) 100% 300px no-repeat,
+	            url(../images/IERZ.png) 100% 600px no-repeat;
+	text-align: center;
+	padding-top:10px;
+}
+.explore-city__wrapper{
+  display: flex;
+  padding:0 20%;
+  margin:0 auto;
+}
+.explore-city__header{
+	margin-bottom:70px;
+}
+.explore-city__text{
+	text-align: left;
+	padding-bottom:30px;
+}
+.text__header{
+	font-size:36px;
+	color:$button-color;
+	margin-bottom:50px;
+	
+}
+.text__paragraf{
+	font-family: "Montserrat-Regular",sans-serif;
+	font-weight: 600;
+	color:$font-color;
+	line-height:2;
+	font-size:14px;
+	padding-right:30px;
+	margin-bottom: 50px;
+}
+
+.explore-city__image{
+	background: url(../images/BOX.png) 100% 100% no-repeat;
+	height:560px;
+	margin-bottom: 170px;
+	padding-bottom:50px;
+	padding-right:60px;
+}

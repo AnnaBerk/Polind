@@ -1,0 +1,40 @@
+@import "color-variables.scss";
+.offers-galery{
+	display: flex;
+	flex-wrap: wrap;
+	margin:30px auto;
+  padding:0 20%;
+  color:$font-color;
+  justify-content: space-between;
+}
+.offers-galery__item{
+	padding:10px 10px 30px;
+	margin:30px 15px;
+	box-shadow:0 0 20px 30px rgb(239,240,245) ;
+	text-align: center;
+	border-radius:5px;
+}
+.offers-galery__item>img{
+	border-radius:5px;
+	width:355px;
+	height:170px;
+}
+.offers-galery__header{
+	margin:30px 0 10px;
+	font-size:30px;
+}
+.best-galery__place{
+	margin-bottom:30px;
+	font-size:14px;
+
+}
+.button-offer{
+	background-color: #fff;
+	box-shadow:0 0 20px 30px rgb(249,250,251) ;
+	color:$disabled-color;
+	&:hover,&:focus{
+    	background-color:$button-color;
+    	color:rgb(185,128,0);
+    }
+
+}

@@ -1,0 +1,24 @@
+@import "color-variables.scss";
+.sign{
+	background: url(../images/BG.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height:642px;
+	text-align: center;
+	padding-top: 215px;
+	color:#fff;
+}
+.sign__enjoy{
+	font-size: 92px;
+}
+.button-sign{
+	display: block;
+	margin:50px auto;
+}
+.sign__mail{
+font-size:18px;
+font-family: "Montserrat-Regular",sans-serif;
+font-weight: 400;
+}
+.sign__mail>a{
+	color:$button-color;
+}

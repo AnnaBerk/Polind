@@ -1,0 +1,50 @@
+@import "color-variables.scss";
+.search-wrapper{
+	text-align: center;
+}
+.searchfield{
+	width:42%;
+	height:60px;
+	min-width:220px;
+	margin-top:60px;
+	margin-bottom:20px;
+	padding-left:30px;
+	border-radius:30px;
+	border:0;
+	box-shadow:0 0 20px 30px rgb(249,250,251) ;
+	font-size:18px;
+	color:rgb(150,159,160);
+	  &:focus{
+    	color:$button-color;
+    }
+}
+.search-buttons-wrapper{
+	width:42%;
+	min-width:220px;
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+
+}
+.button__search{
+	padding:5px 10px;
+	text-transform: none;
+  color:#fff;
+  background-color: $disabled-color;
+    &:hover,&:focus{
+    	background-color:$button-color;
+    	color:#fff;
+    }
+}
+.button__submit{
+	color:$disabled-color;
+	text-transform: none;
+	padding:5px 10px;
+	background-color: #fff;
+	border:1px solid $disabled-color;
+	&:hover,&:focus{
+    	background-color:$button-color;
+    	border:1px solid transparent;
+    	color:$disabled-color;
+    }
+}

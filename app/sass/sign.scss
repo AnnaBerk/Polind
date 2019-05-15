@@ -1,6 +1,7 @@
 @import "color-variables.scss";
 .sign{
 	background: url(../images/BG.jpg) 0 0 no-repeat;
+	background-color: $font-color;
 	background-size: cover;
 	height:642px;
 	text-align: center;

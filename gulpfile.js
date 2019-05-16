@@ -53,6 +53,11 @@
             .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
     });
 
+    gulp.task('scripts', function() {
+    return gulp.src('app/js/common.js')
+    .pipe(browserSync.reload({ stream: true }))
+});
+
     gulp.task('prebuild', async function() {
 
         var buildCss = gulp.src([ // Переносим библиотеки в продакшен
@@ -88,7 +93,7 @@
     gulp.task('watch', function() {
         gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
         gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
-       
+        gulp.watch('app/js/common.js', gulp.parallel('scripts'));
     });
-    gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+    gulp.task('default', gulp.parallel('sass', 'browser-sync','watch'));
     gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass'));

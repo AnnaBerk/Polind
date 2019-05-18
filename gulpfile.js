@@ -57,7 +57,7 @@
     return gulp.src('app/js/common.js')
     .pipe(browserSync.reload({ stream: true }))
 });
-
+    
     gulp.task('prebuild', async function() {
 
         var buildCss = gulp.src([ // Переносим библиотеки в продакшен

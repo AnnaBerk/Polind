@@ -42,6 +42,11 @@
 	margin-top:320px;
 	color:rgb(275,275,275);
 	margin-bottom:10px;
+
+	&hover,
+	&focus{
+		transform: translateY(50%);
+	}
 }
 .best-offers__place{
 	font-size:14px;

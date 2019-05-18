@@ -27,6 +27,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^9.0.0",
+    "gulp-webp": "^4.0.1",
     "imagemin-pngquant": "^7.0.0",
     "node-normalize-scss": "^8.0.0",
     "stylelint": "^10.0.1"

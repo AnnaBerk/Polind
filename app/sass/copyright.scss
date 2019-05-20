@@ -11,4 +11,12 @@
 	padding-bottom:220px;
 	font-size:24px;
 	background: url(../images/logo.png) 50% 40% no-repeat;
+
+
+		@media(min-resolution:1.5dppx){
+		.page{
+			background: url(../images/logo@2x.png) 50% 40% no-repeat;
+		}
+
+	}
 }

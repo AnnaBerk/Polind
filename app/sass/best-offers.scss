@@ -22,20 +22,50 @@
 .offer-first{
 	background-image: url(../images/PoznanBest.jpg);
 	width:346px;
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background-image: url(../images/PoznanBest@2x.png);
+	  }
+	}
 }
 .offer-second{
 	background-image: url(../images/Zakopane.jpg);
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background-image: url(../images/Zakopane@2x.png);
+	  }
+	}
 }
 .offer-third{
 	background-image: url(../images/Sandomierz.jpg);
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background-image: url(../images/Sandomierz@2x.png);
+	  }
+	}
 }
 .offer-fourth{
 	background-image: url(../images/Soport.jpg);
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background-image: url(../images/Soport@2x.png);
+	  }
+	}
 }
 .offer-fifth{
 	background-image: url(../images/KarpaczBest.jpg);
 	margin-right:0;
 	width:346px;
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background-image: url(../images/KarpaczBest@2x.png);
+	  }
+	}
 }
 .best-offers__header{
 	font-size:30px;
@@ -43,10 +73,6 @@
 	color:rgb(275,275,275);
 	margin-bottom:10px;
 
-	&hover,
-	&focus{
-		transform: translateY(50%);
-	}
 }
 .best-offers__place{
 	font-size:14px;

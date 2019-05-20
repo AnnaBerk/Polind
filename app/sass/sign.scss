@@ -7,6 +7,12 @@
 	text-align: center;
 	padding-top: 215px;
 	color:#fff;
+
+	@media(min-resolution:1.5dppx){
+		.page{
+			background: url(../images/BG@2x.jpg) 0 0 no-repeat;
+	  }
+	}
 }
 .sign__enjoy{
 	font-size: 92px;

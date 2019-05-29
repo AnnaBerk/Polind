@@ -1,8 +1,6 @@
     var gulp       = require('gulp'),  
         sass         = require('gulp-sass'), 
         browserSync  = require('browser-sync'), 
-        uglify       = require('gulp-uglifyjs'), 
-        cssnano      = require('gulp-cssnano'), 
         rename       = require('gulp-rename'),
         del          = require('del'), 
         imagemin     = require('gulp-imagemin'), 

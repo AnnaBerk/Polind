@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.otf") format("opentype");
+  /* Open Type Font */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.otf") format("opentype");
+  /* Open Type Font */
+  font-weight: bold;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat-Bold",sans-serif;
+  font-weight: bold; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.button {
+  background-color: #ffc74a;
+  border: none;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #b98000;
+  font-family: "Montserrat-Bold",sans-serif;
+  font-weight: bold;
+  text-decoration: none; }
+  .button:hover, .button:focus {
+    color: #ffc74a;
+    background-color: #b98000; }
+
+.header {
+  font-size: 30px;
+  color: #606f81;
+  margin-top: 60px; }
+
+.page {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/BGMain.jpg) 0 0 no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain.jpg) 0 0 no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain.jpg) 0 0 no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain.jpg) 0 0 no-repeat;
+  background-color: #c8c864;
+  height: 1210px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  text-align: center; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .page .page {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/BGMain@2x.jpg) 0 0 no-repeat;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain@2x.jpg) 0 0 no-repeat;
+      background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain@2x.jpg) 0 0 no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BGMain@2x.jpg) 0 0 no-repeat; } }
+
+.page__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo__name {
+  font-size: 30px;
+  width: 180px;
+  height: 61px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  padding-left: 75px;
+  padding-top: 15px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .logo__name .page {
+      background-image: url(../images/logo@2x.png); } }
+
+.page__logo {
+  padding-top: 38px;
+  margin-left: 40px; }
+
+.nav__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.list__item {
+  list-style: none; }
+
+.item-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 25px; }
+  .item-link:hover, .item-link:focus {
+    color: #ffc74a; }
+
+.page__header {
+  font-size: 72px;
+  padding-top: 230px; }
+
+.header-color {
+  color: #ed6950; }
+
+.page__about {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat-Regular",sans-serif;
+  padding-top: 30px; }
+
+.search-button {
+  margin-top: 50px; }
+
+.page__popular {
+  font-size: 18px;
+  margin-top: 270px; }
+
+.best-offers {
+  margin-top: -217px; }
+
+.best-offers__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px; }
+
+.best-offers__item {
+  height: 433px;
+  width: 370px;
+  text-align: center;
+  margin-right: 30px; }
+
+.offer-first {
+  background-image: url(../images/PoznanBest.jpg);
+  width: 346px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .offer-first .page {
+      background-image: url(../images/PoznanBest@2x.png); } }
+
+.offer-second {
+  background-image: url(../images/Zakopane.jpg); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .offer-second .page {
+      background-image: url(../images/Zakopane@2x.png); } }
+
+.offer-third {
+  background-image: url(../images/Sandomierz.jpg); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .offer-third .page {
+      background-image: url(../images/Sandomierz@2x.png); } }
+
+.offer-fourth {
+  background-image: url(../images/Soport.jpg); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .offer-fourth .page {
+      background-image: url(../images/Soport@2x.png); } }
+
+.offer-fifth {
+  background-image: url(../images/KarpaczBest.jpg);
+  margin-right: 0;
+  width: 346px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .offer-fifth .page {
+      background-image: url(../images/KarpaczBest@2x.png); } }
+
+.best-offers__header {
+  font-size: 30px;
+  margin-top: 320px;
+  color: white;
+  margin-bottom: 10px; }
+
+.best-offers__place {
+  font-size: 14px;
+  color: #ffc74a; }
+
+.search-wrapper {
+  text-align: center; }
+
+.searchfield {
+  width: 42%;
+  height: 60px;
+  min-width: 220px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 30px #f9fafb;
+          box-shadow: 0 0 20px 30px #f9fafb;
+  font-size: 18px;
+  color: #969fa0; }
+  .searchfield:focus {
+    color: #ffc74a; }
+
+.search__header {
+  display: block; }
+
+.search-buttons-wrapper {
+  width: 42%;
+  min-width: 220px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+
+.button-search {
+  padding: 5px 10px;
+  text-transform: none;
+  color: #fff;
+  background-color: #bdc8d9; }
+  .button-search:hover, .button-search:focus {
+    background-color: #ffc74a;
+    color: #fff; }
+
+.button-submit {
+  color: #bdc8d9;
+  text-transform: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #bdc8d9; }
+  .button-submit:hover, .button-submit:focus {
+    background-color: #ffc74a;
+    border: 1px solid transparent;
+    color: #bdc8d9; }
+
+.offers-galery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 0 20%;
+  color: #606f81;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.offers-galery__item {
+  padding: 10px 10px 30px;
+  margin: 30px 15px;
+  -webkit-box-shadow: 0 0 20px 30px #eff0f5;
+          box-shadow: 0 0 20px 30px #eff0f5;
+  text-align: center;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.offers-galery__item > img {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  width: 355px;
+  height: 170px; }
+
+.offers-galery__header {
+  margin: 30px 0 10px;
+  font-size: 30px; }
+
+.best-galery__place {
+  margin-bottom: 30px;
+  font-size: 14px; }
+
+.button-offer {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px 30px #f9fafb;
+          box-shadow: 0 0 20px 30px #f9fafb;
+  color: #bdc8d9; }
+  .button-offer:hover, .button-offer:focus {
+    background-color: #ffc74a;
+    color: #b98000; }
+
+.explore-city {
+  background-color: #f9fafb;
+  background: url(../images/SAN.png) 100% 0 no-repeat, url(../images/DOM.png) 100% 300px no-repeat, url(../images/IERZ.png) 100% 600px no-repeat;
+  text-align: center;
+  padding-top: 10px; }
+
+.explore-city__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20%;
+  margin: 0 auto; }
+
+.explore-city__header {
+  margin-bottom: 70px; }
+
+.explore-city__text {
+  text-align: left;
+  padding-bottom: 30px; }
+
+.text__header {
+  font-size: 36px;
+  color: #ffc74a;
+  margin-bottom: 50px; }
+
+.text__paragraf {
+  font-family: "Montserrat-Regular",sans-serif;
+  font-weight: 600;
+  color: #606f81;
+  line-height: 2;
+  font-size: 14px;
+  padding-right: 30px;
+  margin-bottom: 50px; }
+
+.explore-city__image {
+  background: url(../images/BOX.png) 100% 100% no-repeat;
+  height: 560px;
+  margin-bottom: 170px;
+  padding-bottom: 50px;
+  padding-right: 60px; }
+
+.sign {
+  background: url(../images/BG.jpg) 0 0 no-repeat;
+  background-color: #606f81;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 642px;
+  text-align: center;
+  padding-top: 215px;
+  color: #fff; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .sign .page {
+      background: url(../images/BG@2x.jpg) 0 0 no-repeat; } }
+
+.sign__enjoy {
+  font-size: 92px; }
+
+.button-sign {
+  display: block;
+  margin: 50px auto; }
+
+.sign__mail {
+  font-size: 18px;
+  font-family: "Montserrat-Regular",sans-serif;
+  font-weight: 400; }
+
+.sign__mail > a {
+  color: #ffc74a; }
+
+.copyright {
+  background: url(../images/POLIND.png) 0 0 no-repeat;
+  background-position: center;
+  text-align: center; }
+
+.copyright__text {
+  padding-top: 250px;
+  padding-bottom: 220px;
+  font-size: 24px;
+  background: url(../images/logo.png) 50% 40% no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    .copyright__text .page {
+      background: url(../images/logo@2x.png) 50% 40% no-repeat; } }
